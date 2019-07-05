@@ -10,7 +10,7 @@ class App extends StatelessWidget {
         title: 'Tic Tac Toe',
         theme: ThemeData(
           primarySwatch: Colors.teal,
-          brightness: Brightness.light,
+          brightness: Brightness.dark,
 
         ),
         home: HomePage()
