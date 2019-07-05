@@ -9,7 +9,7 @@ class App extends StatelessWidget {
     return MaterialApp(
         title: 'Tic Tac Toe',
         theme: ThemeData(
-          primarySwatch: Colors.yellow,
+          primarySwatch: Colors.purple,
           brightness: Brightness.dark,
 
         ),
