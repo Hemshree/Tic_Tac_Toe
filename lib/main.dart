@@ -59,25 +59,25 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  _buildElement(0, 0),
-                  _buildElement(0, 1),
-                  _buildElement(0, 2),
+                  _createInput(0, 0),
+                  _createInput(0, 1),
+                  _createInput(0, 2),
                 ],
               ),
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  _buildElement(1, 0),
-                  _buildElement(1, 1),
-                  _buildElement(1, 2),
+                  _createInput(1, 0),
+                  _createInput(1, 1),
+                  _createInput(1, 2),
                 ],
               ),
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  _buildElement(2, 0),
-                  _buildElement(2, 1),
-                  _buildElement(2, 2),
+                  _createInput(2, 0),
+                  _createInput(2, 1),
+                  _createInput(2, 2),
                 ],
               ),
             ],
@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> {
 
   String _lastChar = 'o';
 
-  _buildElement(int i, int j) {
+  _createInput(int i, int j) {
     return GestureDetector(
       onTap: () {
         _changeMatrixField(i, j);
@@ -125,6 +125,7 @@ class _HomePageState extends State<HomePage> {
 
         _lastChar = _matrix[i][j];
       }
+      
     });
   }
 
